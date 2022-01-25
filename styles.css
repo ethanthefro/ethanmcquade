@@ -28,6 +28,15 @@ h1, button {
     color: black;
 }
 
+.content {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.skinny {
+    padding: 0 7.5%;
+}
+
 /***** INDEX STYLES *****/
 
 .index-half {
@@ -93,11 +102,11 @@ h2 {
 
 /***** PORTFOLIO STYLES *****/
 #port1 {background-image: url(img/index-bg.jpg);}
-#port2 {background-image: url(img/covers/2.webp);}
-#port3 {background-image: url(img/index-bg.jpg);}
-#port4 {background-image: url(img/covers/4.webp);}
-#port5 {background-image: url(img/index-bg.jpg);}
-#port6 {background-image: url(img/ethan_outside.webp);}
+#port2 {background-image: url(img/covers/2.webp); padding-top: 4px;}
+#port3 {padding-top: 4px; padding-bottom: 4px;}
+#port4 {background-image: url(img/covers/4.webp); padding-top: 4px; padding-bottom: 4px;}
+#port5 {padding-top: 4px; padding-bottom: 4px;}
+#port6 {background-image: url(img/ethan_outside.webp); padding-top: 4px; padding-bottom: 4px;}
 
 .body-column {
     flex-direction: column;
@@ -171,6 +180,7 @@ h2 {
     overflow: hidden;
     position: relative;
     transition: 0.5s;
+    border: 4px solid transparent;
 }
 
 #big {
@@ -206,11 +216,17 @@ h2 {
 }
 
 h3, h4 {
+    width: auto;
     position: relative;
     text-align: center;
     top: 50%;
     z-index: 2;
     text-shadow: 2px 2px #000000;
+}
+
+h3:hover, h4:hover {
+    color: black;
+    text-shadow: 2px 2px #ffffff;
 }
 
 .video-title, .video-subtitle {
