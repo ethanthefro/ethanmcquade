@@ -199,6 +199,7 @@ h2 {
     right: -9999px;
     margin: auto;
     z-index: 2;
+    transition: 0.5s;
 }
 
 .video video {
