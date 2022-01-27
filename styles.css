@@ -9,6 +9,14 @@
     text-decoration: none;
 }
 
+a:link, a:visited, a:active {
+    color: white;
+}
+
+a:hover {
+    color: gray;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -249,6 +257,12 @@ h3:hover, h4:hover {
     height: 100vh;
 }
 
+.mobile-hr {
+    display: none;
+    width: 20em;
+    margin: 3em auto;
+}
+
 .about-wrapper {
     display: flex;
     flex-direction: column;
@@ -258,7 +272,7 @@ h3:hover, h4:hover {
     right: 25%;
 }
 
-.about-wrapper hr {
+.about-wrapper hr, #port6 hr {
     width: 20em;
     margin: 3em auto;
 }
@@ -271,13 +285,16 @@ h3:hover, h4:hover {
     text-align: center;
 }
 
+.about-photo {
+    display: none;
+}
+
 .clients {
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 30%;
 }
-
 
 .clients h2 {
     text-align: center;
@@ -326,11 +343,25 @@ h3:hover, h4:hover {
 
 .email-wrapper h2 {
     color: white;
+    text-align: center;
 }
 
 /************************** MEDIA QUERIES **************************/
 
 @media screen and (max-width: 768px) {
+    #port2, #port4 {
+        height: 10em;
+        background-image: url(img/index-bg.jpg);
+    }
+
+    #port5 {
+        padding-bottom: 3em;
+    }
+
+    #port4 {
+        padding-top: 0;
+    }
+
     /* PORTFOLIO */
     .Buttons {
         width: 100%;
@@ -368,6 +399,55 @@ h3:hover, h4:hover {
         background-image: url(img/index-bg.jpg);
         background-size: cover;
         background-repeat: no-repeat;
+    }
+    /* ABOUT */
+    #port6 {
+        height: auto;
+        background-image: url(img/index-bg.jpg);
+    }
+    .mobile-hr {
+        display: block;
+    }
+    .about-wrapper {
+        right: initial;
+    }
+    .about-photo {
+        display: block;
+        width: 85%;
+        margin-top: 1em;
+    }
+    .about-photo img {
+        width: 100%;
+    }
+    .about-para {
+        width: 80%;
+    }
+    /* CLIENTS */
+    .clients {
+        width: 95%;
+    }
+    .client-logos img {
+        width: 25%;
+    }
+    /* CONTACT */
+    #port7 {
+        height: auto;
+    }
+    .socials {
+        margin-top: 1em;
+    }
+    .icon {
+        width: 2em;
+    }
+    .email-wrapper {
+        margin-bottom: 1em;
+    }
+    .email-wrapper h2 {
+        font-size: 16px;
+    }
+    .form-wrapper {
+        padding-bottom: 3em;
+        width: 85%;
     }
 }
 
