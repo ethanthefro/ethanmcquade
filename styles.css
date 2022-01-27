@@ -107,6 +107,7 @@ h2 {
 #port4 {background-image: url(img/covers/4.webp); padding-top: 4px; padding-bottom: 4px;}
 #port5 {padding-top: 4px; padding-bottom: 4px;}
 #port6 {background-image: url(img/ethan_outside.webp); padding-top: 4px; padding-bottom: 4px;}
+#port7 {background-image: url(img/index-bg.jpg);}
 
 .body-column {
     flex-direction: column;
@@ -137,7 +138,7 @@ h2 {
     row-gap: .25em;
 }
 
-#port1 {
+#port1, #port7 {
     height: 100vh;
 }
 
@@ -185,6 +186,10 @@ h2 {
 
 #big {
     flex-basis: 50%;
+}
+
+#huge {
+    flex-basis: 100%;
 }
 
 .video img {
@@ -262,7 +267,7 @@ h3:hover, h4:hover {
     margin-top: 1.5em;
     width: 30%;
     color: white;
-    font-size: 18px;
+    font-size: 14px;
     text-align: center;
 }
 
@@ -270,7 +275,7 @@ h3:hover, h4:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 50%;
+    width: 30%;
 }
 
 
@@ -285,13 +290,40 @@ h3:hover, h4:hover {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    column-gap: 1em;
+    column-gap: 3.75%;
+    row-gap: 1em;
 }
 
 .client-logos img {
-    flex: 1;
-    max-width: 10em;
+    width: 17%;
 }
+
+.form-wrapper {
+    background-color: transparent;
+    width: 100%;
+}
+
+.socials {
+    margin-top: 2em;
+    display: flex;
+    align-items: center;
+    column-gap: 2em;
+}
+
+.icon {
+    width: 4em;
+    transition: 0.5s;
+}
+
+.icon:hover {
+    filter: invert(1);
+    transition: 0.5s;
+}
+
+.email-wrapper h2 {
+    color: white;
+}
+
 /************************** MEDIA QUERIES **************************/
 
 @media screen and (max-width: 850px) {
