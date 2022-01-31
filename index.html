@@ -10,9 +10,10 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Ethan McQuade | Portfolio | Director & Cinematographer</title>
 </head>
-<body id=" top"class="body-column">
+<body id="top"class="body-column">
     <div id="port1" class="port-header para">
         <img class="port-logo" src="img/logo.png">
         <h1 class="port-title">Ethan McQuade</h1>
@@ -26,6 +27,11 @@
         <a class="scroll-anim-wrapper" href="#port2"><img class="scroll-anim" src="img/scroll_anim.gif"></a>
     </div>
     <div class="content">
+        <div class="popup" id="media-popup">
+            <div class="pop-vid-wrap">
+                <iframe id="popup-vid" width="100%" height="100%" src="" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
         <div id="port2" class="para">
             <h1 class="section-title">MUSIC VIDEOS</h1>
             <div class="Buttons">
@@ -35,7 +41,7 @@
             </div>
         </div>
         <div id="port3" class="para skinny">
-            <a id="big" class="video" href="">
+            <a id="big" class="video" href="#media-popup" data-media="http://www.youtube.com/embed/_NTKs8_8skg">
                 <h3 class="video-title">NOAH FORD - GETTING BETTER</h3>
                 <h4 class="video-subtitle">CO-DIRECTOR/CINEMATOGRAPHER</h4>
                 <img src="img/covers/1.webp">
@@ -44,7 +50,7 @@
                     <source type="video/mp4" src="vid/getting_better_clip.mp4">
                 </video>
             </a>
-            <a id="big" class="video" href="">
+            <a id="big" class="video" href="#media-popup" data-media="http://www.youtube.com/embed/Tqvy2jV9XJk">
                 <h3 class="video-title">RVNT - OMEN</h3>
                 <h4 class="video-subtitle">CINEMATOGRAPHER</h4>
                 <img src="img/covers/10.webp">
@@ -53,7 +59,7 @@
                     <source type="video/mp4" src="vid/omen_clip.mp4">
                 </video>
             </a>
-            <a class="video" href="">
+            <a class="video" href="#media-popup" data-media="http://www.youtube.com/embed/HTtmZsKqPIY">
                 <h3 class="video-title">SKP - TRIPPING INSIDE MY HEAD</h3>
                 <h4 class="video-subtitle">DIRECTOR/CINEMATOGRAPHER</h4>
                 <img src="img/covers/4.webp">
@@ -62,7 +68,7 @@
                     <source type="video/mp4" src="vid/tripping_clip.mp4">
                 </video>
             </a>
-            <a class="video" href="">
+            <a class="video" href="#media-popup" data-media="https://drive.google.com/file/d/13aIprW2xdTjj54CVj_u4e1smnAC5gVuF/preview">
                 <h3 class="video-title">WRING OUT - BITTER BUT BETTER</h3>
                 <h4 class="video-subtitle">DIRECTOR/CINEMATOGRAPHER</h4>
                 <img src="img/covers/3.webp">
@@ -71,7 +77,7 @@
                     <source type="video/mp4" src="vid/tripping_clip.mp4">
                 </video>
             </a>
-            <a class="video" href="">
+            <a class="video" href="#media-popup" data-media="https://www.youtube.com/embed/-0lVR0hAGyk">
                 <h3 class="video-title">SKYBOUND - DRAG ME DOWN</h3>
                 <h4 class="video-subtitle">DIRECTOR/CINEMATOGRAPHER</h4>
                 <img src="img/covers/6.webp">
@@ -80,7 +86,7 @@
                     <source type="video/mp4" src="vid/drag_me_down_clip.mp4">
                 </video>
             </a>
-            <a class="video" href="">
+            <a class="video" href="#media-popup" data-media="http://www.youtube.com/embed/przgF_2qthA">
                 <h3 class="video-title">BOXFORD - INCANDESCENT</h3>
                 <h4 class="video-subtitle">DIRECTOR/CINEMATOGRAPHER</h4>
                 <img src="img/covers/2.webp">
@@ -89,7 +95,7 @@
                     <source type="video/mp4" src="vid/incandescent_clip.mp4">
                 </video>
             </a>
-            <a class="video" href="">
+            <a class="video" href="#media-popup" data-media="http://www.youtube.com/embed/LEZN2jG-uoQ">
                 <h3 class="video-title">RON LOMONT - GOTTA GET IT</h3>
                 <h4 class="video-subtitle">DIRECTOR/CINEMATOGRAPHER</h4>
                 <img src="img/covers/7.webp">
@@ -98,7 +104,7 @@
                     <source type="video/mp4" src="vid/incandescent_clip.mp4">
                 </video>
             </a>
-            <a class="video" href="">
+            <a class="video" href="#media-popup" data-media="http://www.youtube.com/embed/Y3vFSaYgRu4">
                 <h3 class="video-title">SECRET INGREDIENTS - HALFWAY TO TEXAS</h3>
                 <h4 class="video-subtitle">DIRECTOR/CINEMATOGRAPHER</h4>
                 <img src="img/covers/5.webp">
@@ -107,7 +113,7 @@
                     <source type="video/mp4" src="vid/incandescent_clip.mp4">
                 </video>
             </a>
-            <a class="video" href="">
+            <a class="video" href="#media-popup" data-media="http://www.youtube.com/embed/QAhyO4-anKM">
                 <h3 class="video-title">SKP - THE CHASE</h3>
                 <h4 class="video-subtitle">DIRECTOR/CINEMATOGRAPHER</h4>
                 <img src="img/covers/8.webp">
@@ -116,7 +122,7 @@
                     <source type="video/mp4" src="vid/incandescent_clip.mp4">
                 </video>
             </a>
-            <a class="video" href="">
+            <a class="video" href="#media-popup" data-media="http://www.youtube.com/embed/bpEiA9xfPAc">
                 <h3 class="video-title">BOXFORD - BREATHE</h3>
                 <h4 class="video-subtitle">DIRECTOR/CINEMATOGRAPHER</h4>
                 <img src="img/covers/9.webp">
@@ -127,7 +133,8 @@
             </a>
         </div>
         <div id="port4" class="para">
-            <h1 class="section-title">BRANDED CONTENT</h1>
+            <hr class="mobile-hr">
+            <h1 id="brand-fix" class="section-title">BRANDED CONTENT</h1>
             <div class="Buttons">
                 <a href="#port2"><button class="index-button">MUSIC VIDEOS</button></a>
                 <a href="#port6"><button class="index-button">ABOUT</button></a>
@@ -135,7 +142,7 @@
             </div>
         </div>
         <div id="port5" class="para skinny">
-            <a id="big" class="video" href="">
+            <a id="big" class="video" href="#media-popup" data-media="http://www.youtube.com/embed/x8tLsTghiZo">
                 <h3 class="video-title">LIONSBRIDGE FC PLAYOFF PREVIEW</h3>
                 <h4 class="video-subtitle">SIDELINE/B-ROLL VIDEOGRAPHER</h4>
                 <img src="img/covers/h.webp">
@@ -144,7 +151,7 @@
                     <source type="video/mp4" src="vid/lbfc_clip.mp4">
                 </video>
             </a>
-            <a id="big" class="video" href="">
+            <a id="big" class="video" href="#media-popup" data-media="https://drive.google.com/file/d/1DfJq1CKWPo9Vny86m-bofh--YZV8Zs_j/preview">
                 <h3 class="video-title">MONSTER SPEC AD</h3>
                 <h4 class="video-subtitle">DIRECTOR/CINEMATOGRAPHER</h4>
                 <img src="img/covers/g.webp">
@@ -153,7 +160,7 @@
                     <source type="video/mp4" src="vid/monster.mp4">
                 </video>
             </a>
-            <a id="big" class="video" href="">
+            <a id="big" class="video" href="#media-popup" data-media="http://www.youtube.com/embed/QBuupjMDDhY">
                 <h3 class="video-title">STREET UNITED AD</h3>
                 <h4 class="video-subtitle">DIRECTOR/CINEMATOGRAPHER</h4>
                 <img src="img/covers/a.webp">
@@ -162,7 +169,7 @@
                     <source type="video/mp4" src="vid/incandescent_clip.mp4">
                 </video>
             </a>
-            <a id="big" class="video" href="">
+            <a id="big" class="video" href="#media-popup" data-media="https://drive.google.com/file/d/1tBjttY6rIS4gvpP7vuubfJ6ln6j5MX70/preview">
                 <h3 class="video-title">ECSC EVENT RECAP</h3>
                 <h4 class="video-subtitle">DIRECTOR/CINEMATOGRAPHER</h4>
                 <img src="img/covers/b.webp">
@@ -171,7 +178,7 @@
                     <source type="video/mp4" src="vid/incandescent_clip.mp4">
                 </video>
             </a>
-            <a class="video" href="">
+            <a class="video" href="#media-popup" data-media="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Flowbat.tv%2Fvideos%2F2492075261030019">
                 <h3 class="video-title">AFSP OUT OF THE DARKNESS WALK</h3>
                 <h4 class="video-subtitle">DIRECTOR/CINEMATOGRAPHER</h4>
                 <img src="img/covers/c.webp">
@@ -180,7 +187,7 @@
                     <source type="video/mp4" src="vid/incandescent_clip.mp4">
                 </video>
             </a>
-            <a class="video" href="">
+            <a class="video" href="#media-popup" data-media="https://www.youtube.com/embed/nid3B5fDzn8">
                 <h3 class="video-title">CDYNE CORPORATION</h3>
                 <h4 class="video-subtitle">DIRECTOR</h4>
                 <img src="img/covers/d.webp">
@@ -189,7 +196,7 @@
                     <source type="video/mp4" src="vid/incandescent_clip.mp4">
                 </video>
             </a>
-            <a class="video" href="">
+            <a class="video" href="#media-popup" data-media="https://www.youtube.com/embed/93u-P2gb2XY">
                 <h3 class="video-title">EXTREME HOME MAKEOVER SUBMISSION</h3>
                 <h4 class="video-subtitle">CINEMATOGRAPHER</h4>
                 <img src="img/covers/e.webp">
@@ -198,7 +205,7 @@
                     <source type="video/mp4" src="vid/incandescent_clip.mp4">
                 </video>
             </a>
-            <a class="video" href="">
+            <a class="video" href="#media-popup" data-media="https://www.youtube.com/embed/cgu-fijpjJw">
                 <h3 class="video-title">MAX BRAND DIGITAL</h3>
                 <h4 class="video-subtitle">CINEMATOGRAPHER</h4>
                 <img src="img/covers/f.webp">
@@ -260,5 +267,6 @@
             </div>
         </div>
     </div>
+    <script src="code.js"></script>
 </body>
 </html>
