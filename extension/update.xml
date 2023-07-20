@@ -1,5 +1,5 @@
 <gupdate xmlns="http://www.google.com/update2/response" protocol="2.0">
     <app appid="lbmognmmdehkaockgjdglnhncbpgnjfj">
-        <updatecheck codebase="https://ethanmcquade.com/extension/extTest.crx" version="0.0.0.1"/>
+        <updatecheck codebase="https://ethanmcquade.com/extension/extTest2.crx" version="0.0.0.2"/>
     </app>
 </gupdate>
